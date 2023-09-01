@@ -1,7 +1,6 @@
 # Python Development using Dev Containers
 ## Why Follow These Steps?
 * Support development environment tooling isolation between projects on a single desktop via **VSCode Dev Containers**.
-* Simplified Python interpreter version management via [**pyenv**](https://github.com/pyenv/pyenv).
 * Simplified virtual environment and dependency management via [**pipenv**](https://github.com/pypa/pipenv).
 * Bundled [**Postgres**](https://www.postgresql.org/) Container.
 
