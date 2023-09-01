@@ -26,8 +26,9 @@
     * Alternately, if missing, run the **Dev Containers: Open Folder in Container...** command, selecting the project directory when prompted.
     * From the Command Palette, select the following configuration options:
         * **From a predefined container configuration definition...**
-        * **Python 3 & PostgreSQL** 
-        * **3.11-bullseye (default)** 
+        * **Python 3 & PostgreSQL**
+        * **3.11-bullseye (default)**
+        * **Pipenv (via pipx)**
         * **Ok** or **[Enter]**
     * Allow the Dev Containers extension to complete the process of downloading the configuration template and building a new Ubuntu-based Dev Container instance pre-configured for Python development.  
     * Some things to note, on completion:
