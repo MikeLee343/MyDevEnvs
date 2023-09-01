@@ -39,7 +39,7 @@
 5. The **pipenv** tool supports virtual environment management and more robust dependency management over **pip**.  Open the Visual Studio Terminal and use **pipenv** to create a new Python virtual environment within your Dev Container.
     * Create a new Python virtual environment using the Python interpreter version that ships with your Dev Container base image.
         ```
-        pipenv --python <project version>
+        pipenv install
         ```
     * Activate the new Python virtual environment:
         ```
