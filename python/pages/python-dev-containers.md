@@ -27,8 +27,9 @@
         * **From a predefined container configuration definition...**
         * **Python 3 & PostgreSQL**
         * **3.11-bullseye (default)**
+     * Continuing in the configuration flow, select the following option
         * **Pipenv (via pipx)**
-        * **Ok** or **[Enter]**
+     * Confirm your choices by selecting hitting **Ok** or **[Enter]**
     * Allow the Dev Containers extension to complete the process of downloading the configuration template and building a new Ubuntu-based Dev Container instance pre-configured for Python development.  
     * Some things to note, on completion:
         * The extension will automatically start up and attach itself to the newly created Dev Container for development activities. 
