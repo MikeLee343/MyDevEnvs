@@ -48,7 +48,7 @@
     * Close any open Visual Studio Code Terminal sessions.
 
 ### Set Python Interpreter Version Used by Visual Studio Code IDE
-8. Visual Studio Code will attempt to "find" the correct version of Python interpreter, but it's better to specify the Python interpreter that should be used explicitly.
+6. Visual Studio Code will attempt to "find" the correct version of Python interpreter, but it's better to specify the Python interpreter that should be used explicitly.
     * Open the Command Palette and run the **Python: Clear Cache and Reload Window** command.
     * Open the Command Palette and run the **Python: Select Interpreter** command.
     * From the Command Palette, select the Python interpreter entry with the **Pipenv** designation on the right.
