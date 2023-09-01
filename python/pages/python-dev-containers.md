@@ -35,71 +35,15 @@
         * The extension will automatically start up and attach itself to the newly created Dev Container for development activities. 
         * The extension will configure your Dev Container to bind mount your local, active workspace, overriding the default mount defined in the configuration template.
 
-### Install Development Python Interpreter with pyenv
-5. Open the Visual Studio Terminal and use the following steps to install **pyenv** within your Python Dev Container.
-    * Run the following command to download and execute the installation script maintained at [**pyenv-installer**](https://github.com/pyenv/pyenv-installer/):
-        ```
-        curl https://pyenv.run | bash
-        ```
-    * Open your **.profile** file using the following command:
-        ```
-        code ~/.profile
-        ```
-    * Append and save the following bash commands to the end of the file:
-        ```
-        export PYENV_ROOT="$HOME/.pyenv"
-        command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-        eval "$(pyenv init -)"
-        ```
-    * Open your **.bashrc** file using the following command:
-        ```
-        code ~/.bashrc
-        ```
-    * Append and save the following bash commands to the end of the file:
-        ```
-        export PYENV_ROOT="$HOME/.pyenv"
-        command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-        eval "$(pyenv init -)"
-        ```
-    * Close any open Visual Studio Code Terminal sessions.
-
-6. Reopen the Visual Studio Terminal and use the following steps to install your development Python interpreter within your Dev Container. 
-    * Update pyenv, its plugins including the list of available versions:
-        ```
-        pyenv update
-        ```
-    * List versions installed:
-        ```
-        pyenv versions
-        ```
-    * List available versions available for download:
-        ```
-        pyenv install --list
-        ```
-    * Install desired version of Python interpreter:
-        ```
-        pyenv install <version>
-        ```
-    * Set desired global version of Python interpreter:
-        ```
-        pyenv global <version>
-        ```
-
 ### Create Development Virtual Environment with pipenv
-6. The **pip** utility gets installed with your global Python interpreter.  Use **pip** to install **pipenv**.
-    * Update pip package, using pip:
-        ```
-        pip install --upgrade pip
-        ```
-    * Install pipenv package globally for the current Dev Container/pyenv environment user:
-        ```
-        pip install pipenv --user
-        ```
-
-7. The **pipenv** tool supports virtual environment management and more robust dependency management over **pip**.  Use **pipenv** to create a new a Python virtual environment within your Dev Container.
-    * Create a new Python virtual environment using your desired Python interpreter version:
+5. The **pipenv** tool supports virtual environment management and more robust dependency management over **pip**.  Open the Visual Studio Terminal and use **pipenv** to create a new Python virtual environment within your Dev Container.
+    * Create a new Python virtual environment using the Python interpreter version that ships with your Dev Container base image.
         ```
         pipenv --python <project version>
+        ```
+    * Activate the new Python virtual environment:
+        ```
+        pipenv shell
         ```
     * Close any open Visual Studio Code Terminal sessions.
 
