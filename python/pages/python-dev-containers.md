@@ -53,4 +53,4 @@
     * Open the Command Palette and run the **Python: Select Interpreter** command.
     * From the Command Palette, select the Python interpreter entry with the **Pipenv** designation on the right.
 
-Congratulations, your Python Environment with **pyenv** and **pipenv** is ready for use with Visual Studio Code!
+Congratulations, your Python Environment with **pipenv** and a default virtual environment is ready for use with Visual Studio Code!
