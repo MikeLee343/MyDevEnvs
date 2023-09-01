@@ -18,11 +18,11 @@
     ```
 * List installed packages + dependencies:
     ```
-    * pipenv graph
+    pipenv graph
     ```
 * Rehydrate project packages + dependencies from pipfile/pipfile.lock:
     ```
-    * pipenv install
+    pipenv install
     ```
 * Uninstall package \<package Name> + dependencies
     ```
